@@ -1,0 +1,21 @@
+[submodule "src/graspit_commander"]
+	path = src/graspit_commander
+	url = git@github.com:aalto-intelligent-robotics/graspit_commander.git
+[submodule "src/graspit_interface"]
+	path = src/graspit_interface
+	url = git@github.com:aalto-intelligent-robotics/graspit_interface.git
+[submodule "src/grid_sample_plugin"]
+	path = src/grid_sample_plugin
+	url = git@github.com:aalto-intelligent-robotics/grid_sample_plugin.git
+[submodule "src/shape_completion_network"]
+	path = src/shape_completion_network
+	url = git@github.com:aalto-intelligent-robotics/shape_completion_network.git
+[submodule "src/point_cloud_segmentation"]
+	path = src/point_cloud_segmentation
+	url = git@github.com:aalto-intelligent-robotics/point_cloud_segmentation.git
+[submodule "src/graspit_msgs"]
+	path = src/graspit_msgs
+	url = git@github.com:aalto-intelligent-robotics/graspit_msgs.git
+[submodule "src/supervoxel_clustering"]
+	path = src/supervoxel_clustering
+	url = git@github.com:fverdoja/Fast-3D-Pointcloud-Segmentation.git
