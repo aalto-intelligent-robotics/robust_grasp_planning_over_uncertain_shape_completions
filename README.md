@@ -47,13 +47,20 @@ catkin_make
 
 First of all, you need to download the ground-truth meshes and create some shape completed meshes. Ground-truth meshes can be downloaded from [here](https://drive.google.com/drive/u/1/folders/1ScywyPvZNoFzg8cn1i_gQ9OlYYe1lLg-) and for shape completed meshes you can either download some pre-generated ones [here](https://drive.google.com/drive/u/1/folders/128kbeCBe3W3leGJcV3fmtLMu35jHSPuD) or generate new ones as detailed [here](https://github.com/aalto-intelligent-robotics/shape_completion_network).
 
-After you have these meshes, run
+After you have these meshes, open a terminal and run
 
 ```
-roslaunch graspit_interface graspit_interface.launch
+roslaunch graspit_commander graspit_commander.launch
 ```
 
-and the following user interface will launch
+Then, open another terminal and run
+
+```
+
+roslaunch grid_sample_plugin grid_sample_plugin.launch
+```
+
+which will open the following user interface
 
 ![interface start](images/interface_start.png?raw=true "Interface start")
 
@@ -62,6 +69,8 @@ Next, click on the `Do Simulation Experiments button` and the following window w
 ![Simulation experiments](images/simulation_experiments.png?raw=true "Simulation Experiments")
 
 Then, click each of these buttons and give the appropriate path to the data. Once you are done, simply click on run. If everything goes as expected, you will see the following in the original GraspIt! window
+
+![Simulation experiment running](images/simulation_experiment_running.png?raw=true "Simulation Experiments Running")
 
 GraspIt! is now generating and evaluating the grasps in the background and once it is done, it will save the results in the folder you specified earlier.
 
