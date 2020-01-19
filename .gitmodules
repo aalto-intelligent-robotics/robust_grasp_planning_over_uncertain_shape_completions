@@ -16,3 +16,6 @@
 [submodule "src/supervoxel_clustering"]
 	path = src/supervoxel_clustering
 	url = git@github.com:fverdoja/Fast-3D-Pointcloud-Segmentation.git
+[submodule "src/graspit_msgs"]
+	path = src/graspit_msgs
+	url = git@github.com:CRLab/graspit_msgs.git
