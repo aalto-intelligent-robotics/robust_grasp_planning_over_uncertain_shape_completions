@@ -1,0 +1,10 @@
+#Request
+sensor_msgs/PointCloud2 partial_cloud
+---
+#Result
+shape_msgs/Mesh mean_mesh
+shape_msgs/Mesh[] sampled_meshes
+std_msgs/String  mean_mesh_stl_file
+std_msgs/String[]  sampled_meshes_stl_file
+---
+#Feedback

@@ -1,0 +1,14 @@
+#Request
+string object_completion_topic
+---
+#Result
+sensor_msgs/PointCloud2[] partial_views
+shape_msgs/Mesh[]  mean_meshes
+shape_msgs/Mesh[]  sample_meshes
+std_msgs/String[]  mean_meshes_stl_file
+std_msgs/String[]  sample_meshes_stl_file
+geometry_msgs/PoseStamped[]  poses
+geometry_msgs/Pose orig_pose
+int32 num_meshes
+---
+#Feedback
