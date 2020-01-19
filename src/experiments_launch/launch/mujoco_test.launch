@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+Copyright (c) Aalto  - All Rights Reserved
+Created on: 11/11/19
+    Author: Jens Lundell <jens.lundell@aalto.fi>
+   Details:
+-->
+<launch>
+    <!-- Start the lumi simulation -->
+    <include file="$(find lumi_mujoco)/launch/table_simulation.launch">
+        <arg name="segmentation" value="false"/>
+        <arg name="shape_completion" value="false"/>
+    </include>
+
+    <!-- Start object segmentation -->
+    <include file="$(find object_segmentation)/launch/segmentation.launch">
+        <arg name="segmentation_algorithm" value="base"/>
+    </include>
+
+    <!-- Start graspit-interface -->
+    <include file="$(find graspit_interface)/launch/graspit_interface.launch">
+        <arg name="render" default="true"/>
+        <arg name="grasp_planner" default="simulated_annealing"/>
+        <arg name="number_of_best_grasps" default="10"/>
+        <arg name="rank_grasps_on_samples" default="true"/>
+    </include>
+
+
+    <!-- Start graspit-commander-->
+    <include file="$(find graspit_commander)/launch/graspit_commander.launch"/>
+
+    <!-- Start shape completion -->
+    <include file="$(find scene_completion)/launch/scene_completion.launch">
+        <arg name="generate_shape_samples" value="true"/>
+    </include>
+
+
+</launch>

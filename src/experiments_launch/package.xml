@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>experiments_launch</name>
+  <version>0.0.0</version>
+  <description>The experiments_launch package</description>
+
+  <maintainer email="jens.lundell@aalto.fi">jens</maintainer>
+
+  <license>MIT</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+
+  </export>
+</package>
